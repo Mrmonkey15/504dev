@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    /*space variables */
+    --spacing-xs: 0.5rem;  /* Extra pequeno */
+    --spacing-sm: 1rem;    /* Pequeno */
+    --spacing-md: 1.5rem;  /* Médio */
+    --spacing-lg: 2rem;    /* Grande */
+    --spacing-xl: 3rem;    /* Extra grande */
+    --spacing-e: 5rem;     /* Especial */
+
+    /* Color variables */
+    --primary-color: #EA4A01;   /* Cor Primária */
+    --secondary-color: #FA8A01; /* Cor Secundária */
+    --tertiary-color: #FBFAF9;  /* Cor Terciária */
+    --quartenary-color:#0000;  /* Cor quarternaria */
+
+    /*Font size*/
+    --title: 2rem;
+    --subtitle:1.5rem;
+    --general:1rem 
+}
+
+
+
+
+
+/* Excluir dps q acabar (hidden)*/
+
+.sidebar{
+    display: none;
+}
+.Social-Media{
+    display: none;
+}
+
+
+/* Reset */
+
+body{
+    margin:0;
+    border:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montserrat, Arial, Helvetica, sans-serif;
+}
+
+
+/* Botões  */
+
+
+.default-btn{
+background-color: var(--secondary-color);
+
+padding: var(--spacing-sm);
+border-radius: 20px;
+border: 0;
+}
+.default-btn a {
+    color: black;
+    text-decoration: none;
+    font-family: azeret mono;
+    font-weight: bold;
+}
+.wpp-btn{
+    background-color: #00bb2d;
+    padding: var(--spacing-sm);
+    border-radius: 20px;
+    border: 0;
+    color: white;
+}
+.wpp-btn a{
+    color: white;
+    text-decoration: none;
+    font-family: 'montserrat'
+    
+}
+.alternative-btn{
+    background-color: #ffff;
+    padding: var(--spacing-sm);
+    border-radius: 20px;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+.alternative-btn a{
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-family: 'azeret mono';
+    font-weight: bold;
+    
+}
+
+
+
+
+
+/* Layout cabeçalho mobile */
+
+header{
+    display:none;
+    background-color: var(--secondary-color);
+    padding: var(--spacing-md);  
+}
+.header__container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__container .logo {
+    margin:0 auto;
+}
+.header__container i {
+   font-size: 32px;
+}
+
+/* Layout roda-pé mobile */
+
+footer{
+    background-color: var(--secondary-color);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacing-md);
+    gap: var(--spacing-md);
+    border-radius: 60px 60px 0 0;
+}
+footer nav{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    text-align: center;
+}
+nav a {
+    font-family: 'azeret mono';
+    text-decoration: none;
+    color: black;
+}
+.setIcon{
+    color: #ffff;
+    font-weight: bolder;
+
+}
