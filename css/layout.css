@@ -9,32 +9,72 @@
     --spacing-lg: 2rem;    /* Grande */
     --spacing-xl: 3rem;    /* Extra grande */
     --spacing-e: 5rem;     /* Especial */
-
     /* Color variables */
     --primary-color: #EA4A01;   /* Cor Primária */
     --secondary-color: #FA8A01; /* Cor Secundária */
     --tertiary-color: #FBFAF9;  /* Cor Terciária */
     --quartenary-color:#0000;  /* Cor quarternaria */
-
     /*Font size*/
     --title: 2rem;
     --subtitle:1.5rem;
     --general:1rem 
 }
 
-
-
-
-
-/* Excluir dps q acabar (hidden)*/
+/* sidebar*/
 
 .sidebar{
-    display: none;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: var(--spacing-md);
+   height: 100vh;
+    background-color:var(--secondary-color);
+    box-sizing: border-box;
 }
-.Social-Media{
-    display: none;
+.sidebar__header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    padding: 20px;
+    font-size: var(--spacing-md);
 }
+.sidebar__header img{
+    margin: 0 auto;
+}
+.sidebar nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex: 2;
+    margin: 0 auto;
+}
+.nav__item{
+    font-size: var(--spacing-lg);
+    font-family: azeret-mono;
+    font-weight: bold;
+    display: flex;
+    gap: var(--spacing-lg);
+}
+.setItem, .setItem a{
+    color: white;
+}
+.social-media{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.media__icons{
+    display: flex;
+    gap: var(--spacing-md);
 
+}
+.media__icons a {
+    color:  black;
+    font-size: var(--spacing-lg);
+}
 
 /* Reset */
 
@@ -46,9 +86,10 @@ body{
     font-family: montserrat, Arial, Helvetica, sans-serif;
 }
 
-
 /* Botões  */
-
+button{
+    display: none   ;
+}
 
 .default-btn{
 background-color: var(--secondary-color);
@@ -90,10 +131,6 @@ border: 0;
     font-weight: bold;
     
 }
-
-
-
-
 
 /* Layout cabeçalho mobile */
 
