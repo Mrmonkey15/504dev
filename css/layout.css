@@ -87,36 +87,29 @@ body{
 }
 
 /* Botões  */
-button{
-    display: none   ;
-}
+
 
 .default-btn{
 background-color: var(--secondary-color);
-
 padding: var(--spacing-sm);
 border-radius: 20px;
 border: 0;
+color: black;
+text-decoration: none;
+font-family: azeret mono;
+font-weight: bold;
 }
-.default-btn a {
-    color: black;
-    text-decoration: none;
-    font-family: azeret mono;
-    font-weight: bold;
-}
+
 .wpp-btn{
     background-color: #00bb2d;
     padding: var(--spacing-sm);
     border-radius: 20px;
     border: 0;
     color: white;
-}
-.wpp-btn a{
-    color: white;
     text-decoration: none;
-    font-family: 'montserrat'
-    
+    font-family: azeret mono;
 }
+
 .alternative-btn{
     background-color: #ffff;
     padding: var(--spacing-sm);
@@ -135,7 +128,7 @@ border: 0;
 /* Layout cabeçalho mobile */
 
 header{
-    display:none;
+    display:flex;
     background-color: var(--secondary-color);
     padding: var(--spacing-md);  
 }
