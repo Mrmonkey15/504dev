@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/layout.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>504 Dev</title>
+    <title>Repositório 504</title>
 </head>
 <body>
-
+<!-- sidebar -->
 <div class="sidebar">  
         <div class="sidebar__header">
         <i class="fa-solid fa-arrow-rotate-left"></i>
         <img src="/images/LogoPrototype.svg" alt="" class="logo">
          </div>
-        <nav>
+        <nav  aria-label="sidebar navigation">
             <div class="nav__item setItem">
             <i class="fa-solid fa-house"></i><a href="">Início</a>
             </div>
@@ -25,45 +25,62 @@
                     <i class="fa-solid fa-globe"></i></i><a href="">Sobre Nós</a>
                     </div>
         </nav>
-        <div class="social-media">
-            <h1>Siga nossas Redes</h1>
+        <!-- social média -->
+        <aside class="social-media">
+            <h2>Siga nossas Redes</h2>
             <div class="media__icons">
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram" aria-label="Instagram da 504dev"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin" aria-label="Linkedin da 504dev"></i></a>
+                <a href=""><i class="fa-brands fa-facebook" aria-label="Facebook da 504dev"></i></a>
             </div>
-        </div>
+        </aside>
 </div>
-
+        <!-- social média -->
+        <aside class="social-media">
+            <h2>Siga nossas Redes</h2>
+            <div class="media__icons">
+                <a href=""><i class="fa-brands fa-instagram" aria-label="Instagram da 504dev"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin" aria-label="Linkedin da 504dev"></i></a>
+                <a href=""><i class="fa-brands fa-facebook" aria-label="Facebook da 504dev"></i></a>
+            </div>
+        </aside>
+<!-- cabeçalhos -->
 <header>
         <div class="header__container">
         <i class="fa-solid fa-bars"></i>
         <img src="/images/LogoPrototype.svg" alt="" class="logo">
         </div>
 </header>
-<main>
-
-
+<main style="content: none; height: 50vh;">
 </main>
 
+
+<!-- botões e links -->
+
+ <!-- btn padrão -->
 <button class="default-btn">
     <a href=""> Clique aqui</a>
 </button>
-<button class="alternative-btn"><a href="">Clique aqui</a>  </button>
+<!-- btn alternativo -->
+<button class="alternative-btn"><a href="">Clique aqui</a> </button>
+<!-- Wpp semantico -->
 <button class="wpp-btn"><i class="fa-brands fa-whatsapp"></i>
-    <a href="">Whatsapp</a>
-</button>
+    <a href="">Whatsapp</a></button>
+<!-- Btn-wpp simples -->
+<a href="https://wa.me/5521973811604" class="wpp-btn" target="_blank"><i class="fa-brands fa-whatsapp"></i> Contato pelo Whatsapp</a>
 
+
+<!-- Roda-pé -->
 
 <footer>
-    <nav>
-        <a href="" class="nav__icon setIcon" >Inicio</a>
-        <a href="" class="nav__icon">contato</a>
-        <a href="" class="nav__icon">Sobre Nós</a>
+    <nav  aria-label="Navegação de Rodapé">
+        <a href="/index.html" class="nav__icon" >Inicio</a>
+        <a href="/contact.html" class="nav__icon">Contato</a>
+        <a href="/about.html" class="nav__icon setIcon">Sobre Nós</a>
     </nav>
     <img src="/images/LogoPrototype.svg" alt="" class="logo">
-    <span> &reg; Todos os Direitos Reservados</Span>
-</footer>
+    <span> &reg; Todos os Direitos Reservados</span>
+</footer> 
 
 </body>
 </html>

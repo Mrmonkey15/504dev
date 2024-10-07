@@ -51,7 +51,7 @@
 }
 .nav__item{
     font-size: var(--spacing-lg);
-    font-family: azeret-mono;
+    font-family: azeret mono;
     font-weight: bold;
     display: flex;
     gap: var(--spacing-lg);
@@ -59,12 +59,19 @@
 .setItem, .setItem a{
     color: white;
 }
+/* social media section*/
+
 .social-media{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
+    margin: var(--spacing-lg);
+}
+.social-media h2 {
+    color: var(--secondary-color);
+    text-align: center;
 }
 .media__icons{
     display: flex;
@@ -99,7 +106,10 @@ text-decoration: none;
 font-family: azeret mono;
 font-weight: bold;
 }
-
+.default-btn a,.alternative-btn a, .wpp-btn a {
+    text-decoration: none;
+    color: black;
+}
 .wpp-btn{
     background-color: #00bb2d;
     padding: var(--spacing-sm);
@@ -108,7 +118,11 @@ font-weight: bold;
     color: white;
     text-decoration: none;
     font-family: azeret mono;
+    display: block;
+    margin: auto;
+    width: max-content;
 }
+
 
 .alternative-btn{
     background-color: #ffff;

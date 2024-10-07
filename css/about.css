@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+.heroBanner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-md);
+    background-color: var(--secondary-color);
+    color: white ;
+    height: 25vh;
+    text-align: center;
+    border-radius: 0 0 60px 60px;
+    font-family: azeret mono;
+
+}
+.heroBanner span{
+    color: black;
+    font-size: 2rem;
+    font-style: italic;
+}
+.contentContainer , .callToAction{
+    padding: var(--spacing-md);
+    text-align: justify;
+}
+.contentContainer strong {
+    color: var(--secondary-color);
+}
+
+.callToAction{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+
+}
+.callToAction h2{
+    margin: 0;
+    color: var(--secondary-color);
+}
