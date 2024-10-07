@@ -22,7 +22,17 @@
     font-weight: bolder;
     color: white;
 }
+.formItens{ 
+    border: none;
+    border-radius: 20px;
+    height: var(--spacing-md);
+    padding: var(--spacing-sm)  ;
 
+}
+.clear-button{
+    margin-left: var(--spacing-md);
+    text-decoration: underline;
+}
 .wpp-btn{
     display: block;
     margin: auto;
@@ -35,6 +45,4 @@
 .social-media h1 {
     color: var(--secondary-color);
 }
-
-
 
