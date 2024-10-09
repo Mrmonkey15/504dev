@@ -1,0 +1,86 @@
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 500;
+}
+.heroBanner, .services, .about, .process{ 
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    padding: var(--spacing-e) var(--spacing-md);
+    align-items: center;
+    text-align: justify;
+
+}
+.heroBanner{
+    padding-top: var(--spacing-md);
+    background-color: var(--secondary-color);
+    border-radius: 0 0 60px 0px;
+}
+.heroBanner h1,  .heroBanner span {
+    font-family: azeret mono;
+    font-weight: bold;
+    text-align: justify;
+    font-size: var(--spacing-lg);
+}
+.heroBanner span{
+    color: white;
+}
+.heroBanner img{
+    max-width: 18rem;
+}
+.heroBanner p{
+text-indent: var(--spacing-sm);
+font-weight: 500;
+}
+.services{
+    gap: var(--spacing-e);
+}
+.services__item{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    text-align: justify;
+    text-indent: 1rem;
+    align-items: center;
+}
+.imgContainer img{
+    max-width: 7rem;
+}
+.services__item h2{
+    font-size: var(--spacing-md);
+    font-weight: bold;
+    color: var(--secondary-color);
+    text-align: center;
+}
+.about{
+    align-items: start;
+    gap: var(--spacing-lg);
+    background-color: var(--secondary-color);
+    border-radius: 60px  0 0px 0px;
+    text-indent: 1rem;
+}
+.about h2{
+    font-weight: bold;
+    font-size: var(--spacing-lg);
+}
+.about strong{
+    font-weight: bold;
+}
+.about span{
+    font-style: italic;
+}
+.about a{
+    color: white;
+    font-family: azeret mono;
+    font-weight: 600;
+}
+
+.process{
+    background-color: var(--secondary-color);
+    border-top: 1px solid white;
+
+}
