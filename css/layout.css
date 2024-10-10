@@ -104,11 +104,12 @@ border: 0;
 color: black;
 text-decoration: none;
 font-family: azeret mono;
-font-weight: bold;
+/* font-weight: bold; */
 }
 .default-btn a,.alternative-btn a, .wpp-btn a {
     text-decoration: none;
     color: black;
+    font-size: var(--spacing-sm)
 }
 .wpp-btn{
     background-color: #00bb2d;
@@ -131,14 +132,14 @@ font-weight: bold;
     border: 1px solid var(--secondary-color);
     color: var(--secondary-color);
     text-decoration: none;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-family: 'azeret mono';
 }
 .alternative-btn a{
     color: var(--secondary-color);
     text-decoration: none;
     font-family: 'azeret mono';
-    font-weight: bold;
+    /* font-weight: bold; */
 
     
 }

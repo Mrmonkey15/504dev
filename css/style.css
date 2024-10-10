@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-weight: 500;
 }
-.heroBanner, .services, .about, .process{ 
+.heroBanner, .services, .about, .CTA, .partners, .social-media{ 
     display: flex;
     flex-direction: column;
     gap: var(--spacing-md);
@@ -16,7 +16,7 @@
 
 }
 .heroBanner{
-    padding-top: var(--spacing-md);
+    padding: var(--spacing-lg);
     background-color: var(--secondary-color);
     border-radius: 0 0 60px 0px;
 }
@@ -82,5 +82,94 @@ font-weight: 500;
 .process{
     background-color: var(--secondary-color);
     border-top: 1px solid white;
+
+}
+
+
+
+.CTA{
+    gap: var(--spacing-lg);
+}
+.CTA h1{
+    font-family: azeret mono;
+    font-weight: bold;
+    text-align: start ;
+    font-size: var(--spacing-lg);
+}
+.CTA span{
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+.subtitleContainer{
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-md);
+    align-items: center;
+    gap: var(--spacing-md);
+    border-radius: 2rem;
+}
+.partners{
+    padding: 0 0 var(--spacing-md);
+    gap: var(--spacing-lg);
+}
+.partners h1{
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.brandContainer{
+   display: flex;
+   flex-direction: column;
+   gap: var(--spacing-md);
+   width: 100%;
+}
+.container-row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container-row i{
+    font-size: var(--spacing-md);
+}
+.social-media{
+    margin: 0 ;
+}
+
+.social-media h2{
+    font-weight: bold;
+    font-size: var(--spacing-md);
+}
+
+.processContainer{
+    padding: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+.processContainer h1{
+    font-family: azeret mono;
+    font-size: var(--spacing-lg);
+    color: var(--tertiary-color);
+    font-weight: bold;
+    text-align: center;
+}
+.processContainer p{
+    text-align: justify;
+    font-size: 1.2rem;
+}
+.processContainer b {
+    font-weight: bold;
+}
+.stepsContainer{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+.stepRow{
+    display: flex;
+    background-color: rgb(51, 21, 218);
+    padding: var(--spacing-sm);
+ 
 
 }
