@@ -8,10 +8,38 @@
     <link rel="stylesheet" href="/css/layout.css">
     <link rel="stylesheet" href="/css/contact.css">
 </head>
+   <!-- sidebar -->
+   <div class="defaultSidebar"id="sidebar" >  
+    <div class="sidebar__header">
+    <i class="fa-solid fa-arrow-rotate-left" id="backButton"></i>
+    <img src="/images/LogoPrototype.svg" alt="" class="logo">
+     </div>
+    <nav  aria-label="sidebar navigation">
+        <div class="nav__item setItem">
+        <i class="fa-solid fa-house"></i><a href="">Início</a>
+        </div>
+        <div class="nav__item">
+            <i class="fa-solid fa-message"></i><a href="">Contato</a>
+            </div>
+            <div class="nav__item">
+                <i class="fa-solid fa-globe"></i></i><a href="">Sobre Nós</a>
+                </div>
+    </nav>
+    <!-- social média -->
+    <aside class="social-media">
+        <h2>Siga nossas Redes</h2>
+        <div class="media__icons">
+            <a href=""><i class="fa-brands fa-instagram" aria-label="Instagram da 504dev"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin" aria-label="Linkedin da 504dev"></i></a>
+            <a href=""><i class="fa-brands fa-facebook" aria-label="Facebook da 504dev"></i></a>
+        </div>
+    </aside>
+</div>
 <body>
+ 
     <header>
             <div class="header__container">
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars" id="menuToggled"></i>
             <img src="/images/LogoPrototype.svg" alt="" class="logo">
             </div>
     </header>
@@ -63,5 +91,6 @@
     <img src="/images/LogoPrototype.svg" alt="" class="logo">
     <span> &reg; Todos os Direitos Reservados</Span>
 </footer>
+<script src="/js/main.js"></script>
 </body>
 </html>

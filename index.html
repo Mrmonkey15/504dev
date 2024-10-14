@@ -8,10 +8,39 @@
     <link rel="stylesheet" href="/css/layout.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
+   <!-- sidebar -->
+   <div class="defaultSidebar hidden" >  
+    <div class="sidebar__header">
+    <i class="fa-solid fa-arrow-rotate-left" id="backButton"></i>
+    <img src="/images/LogoPrototype.svg" alt="" class="logo">
+     </div>
+    <nav  aria-label="sidebar navigation">
+        <div class="nav__item setItem">
+        <i class="fa-solid fa-house"></i><a href="">Início</a>
+        </div>
+        <div class="nav__item">
+            <i class="fa-solid fa-message"></i><a href="">Contato</a>
+            </div>
+            <div class="nav__item">
+                <i class="fa-solid fa-globe"></i></i><a href="">Sobre Nós</a>
+                </div>
+    </nav>
+    <!-- social média -->
+    <aside class="social-media">
+        <h2>Siga nossas Redes</h2>
+        <div class="media__icons">
+            <a href=""><i class="fa-brands fa-instagram" aria-label="Instagram da 504dev"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin" aria-label="Linkedin da 504dev"></i></a>
+            <a href=""><i class="fa-brands fa-facebook" aria-label="Facebook da 504dev"></i></a>
+        </div>
+    </aside>
+</div>
+
+
 <body>
     <header>
         <div class="header__container">
-        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-bars" id="menuToggled"></i>
         <img src="/images/LogoPrototype.svg" alt="" class="logo">
         </div>
     </header>
@@ -77,29 +106,29 @@
             <div class="stepsContainer">
                     <!-- elemento 1  -->
                 <div class="stepRow" id="stepRow1">
-                    <p>Entendemos as necessidades e objetivos do cliente, garantindo uma visão clara do projeto.</p>
                     <h3>Consulta Inicial</h3>
+                    <p id="contentStep1">Entendemos as necessidades e objetivos do cliente, garantindo uma visão clara do projeto.</p>
                 </div>
                     <!-- elemento 2  -->
                 <div class="stepRow" id="stepRow2">
-                    <h3>Planejamento e estrutura</h3>
-                    <p>Elaboramos o design e definimos a estrutura do site com base na identidade da marca e no público-alvo.</p>
+                    <h3>Planejamento</h3>
+                    <p id="contentStep2">Elaboramos o design e definimos a estrutura do site com base na identidade da marca e no público-alvo.</p>
                 </div>
                     <!-- elemento 3  -->
                 <div class="stepRow" id="stepRow3">
-                    <p>Criamos o layout visual e desenvolvemos o código, garantindo um site responsivo e funcional.</p>
                     <h3>Design</h3>
+                    <p id="contentStep3">Criamos o layout visual e desenvolvemos o código, garantindo um site responsivo e funcional.</p>
                 </div>
                    <!-- elemento 4  -->
                 <div class="stepRow" id="stepRow4">
                     <h3>Codificação</h3>
-                    <p>Na codificação, implementamos as funcionalidades e trazemos o design à vida, garantindo uma experiência fluida em qualquer dispositivo.
+                    <p id="contentStep4">Na codificação, implementamos as funcionalidades e trazemos o design à vida, garantindo uma experiência fluida em qualquer dispositivo.
                     </p>
                 </div>
                  <!-- elemento 5  -->
                 <div class="stepRow" id="stepRow5">
-                    <p>Realizamos ajustes, testes de usabilidade e SEO, garantindo que o site esteja pronto para ser lançado com excelência.</p>
-                    <h3>Finalização e testes</h3>
+                    <h3>Finalização</h3>
+                    <p id="contentStep5">Realizamos ajustes, testes de usabilidade e SEO, garantindo que o site esteja pronto para ser lançado com excelência.</p>
                 </div>
             </div>
         </section>
@@ -153,8 +182,7 @@
         <img src="/images/LogoPrototype.svg" alt="" class="logo">
         <span> &reg; Todos os Direitos Reservados</span>
     </footer> 
-
+    <script src="/js/main.js"></script>
 </body>
-
 
 </html>

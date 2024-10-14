@@ -22,7 +22,7 @@
 
 /* sidebar*/
 
-.sidebar{
+.defaultSidebar{
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -41,7 +41,7 @@
 .sidebar__header img{
     margin: 0 auto;
 }
-.sidebar nav{
+.defaultSidebar nav{
     display: flex;
     flex-direction: column;
     align-items: flex-start;

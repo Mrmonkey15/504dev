@@ -82,12 +82,14 @@ font-weight: 500;
 .process{
     background-color: var(--secondary-color);
     border-top: 1px solid white;
+    padding-bottom: var(--spacing-md);
 
 }
 
 
 
 .CTA{
+    padding: var(--spacing-lg) var(--spacing-md);
     gap: var(--spacing-lg);
 }
 .CTA h1{
@@ -168,8 +170,30 @@ font-weight: 500;
 }
 .stepRow{
     display: flex;
-    background-color: rgb(51, 21, 218);
-    padding: var(--spacing-sm);
- 
-
+    align-items: center;
+    padding: var(--spacing-md);
+    width: 60%;
+    background-color: var(--tertiary-color);
+    border-radius: 0 20px 20px 0;
 }
+.stepRow h3{
+    font-weight: bold;
+}
+/* conteudo impar */
+#contentStep1,#contentStep3,#contentStep5{
+    background-color: black;
+    width: 100%;
+    display: none;
+}
+/* conteudo par  */
+#contentStep2,#contentStep4{
+    width: 100%;
+    display: none;
+}
+#stepRow1,#stepRow3, #stepRow5 {
+    background-color: black;
+    color: var(--tertiary-color);
+    align-self: flex-end;
+    border-radius: 20px 0px 0px 20px;
+}
+
