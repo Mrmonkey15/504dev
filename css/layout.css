@@ -21,16 +21,32 @@
 }
 
 /* sidebar*/
+.hidden{
+    display: none;
+}
 
 .defaultSidebar{
+    position: fixed;
+    top: 0;
+    left: -500px;
+    transition: left 0.7s ease;
     display: flex;
     flex-direction: column;
     flex: 1;
     padding: var(--spacing-md);
-   height: 100vh;
+    height: 100vh;
     background-color:var(--secondary-color);
     box-sizing: border-box;
 }
+.hidden {
+    left: -250px; /* Oculto */
+    transition: left 0.7s ease;
+}
+.visible {
+    left: 0; /* Exibe a sidebar */
+    width: 100%;
+}
+
 .sidebar__header{
     display: flex;
     justify-content: space-between;
@@ -70,7 +86,7 @@
     margin: var(--spacing-lg);
 }
 .social-media h2 {
-    color: var(--secondary-color);
+    color: black;
     text-align: center;
 }
 .media__icons{
