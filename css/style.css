@@ -6,6 +6,9 @@
     box-sizing: border-box;
     font-weight: 500;
 }
+b{
+    font-weight: bold;
+}
 .heroBanner, .services, .about, .CTA, .partners, .social-media{ 
     display: flex;
     flex-direction: column;
@@ -89,7 +92,7 @@ font-weight: 500;
 
 
 .CTA{
-    padding: var(--spacing-lg) var(--spacing-md);
+    padding: var(--spacing-e) var(--spacing-md);
     gap: var(--spacing-lg);
 }
 .CTA h1{
@@ -175,6 +178,10 @@ font-weight: 500;
     width: 60%;
     background-color: var(--tertiary-color);
     border-radius: 0 20px 20px 0;
+    cursor:pointer
+}
+.stepRow:hover{
+    transform: translatey(-10px);
 }
 .stepRow h3{
     font-weight: bold;
@@ -184,16 +191,23 @@ font-weight: 500;
     background-color: black;
     width: 100%;
     display: none;
+    text-align: justify;
+    margin-left: 2rem;
 }
-/* conteudo par  */
-#contentStep2,#contentStep4{
-    width: 100%;
-    display: none;
-}
+/* conteudo impar */
 #stepRow1,#stepRow3, #stepRow5 {
     background-color: black;
     color: var(--tertiary-color);
     align-self: flex-end;
     border-radius: 20px 0px 0px 20px;
 }
-
+.fa-chevron-left, .fa-chevron-right{
+    padding: 1rem;
+}
+/* conteudo par  */
+#contentStep2,#contentStep4{
+    width: 100%;
+    display: none;
+    margin-left: 2rem;
+    text-align: justify
+}
