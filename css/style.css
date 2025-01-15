@@ -33,7 +33,7 @@ b{
     color: white;
 }
 .heroBanner img{
-    max-width: 18rem;
+    width: 30rem;
 }
 .heroBanner p{
 text-indent: var(--spacing-sm);
@@ -212,3 +212,45 @@ font-weight: 500;
     margin-left: 2rem;
     text-align: justify
 }
+
+@media (min-width: 768px) {
+    .process{
+        padding: 2rem  0  5rem ;
+    }
+    .CTA{
+        padding: 4rem;
+        gap: 5rem;
+    } 
+    .CTA h1 {
+        font-size: 3rem;
+    }
+  }
+
+  .subtitleContainer{
+    font-size: var(--spacing-md);
+    padding: 3rem;
+  }
+  .partners{
+    gap: 5rem;
+    font-size: var(--spacing-md);
+  }
+  .brandContainer i{
+    font-size: 3rem;
+  }
+
+  .social-media h2 {
+    font-size: 2rem;
+  }
+  .social-media i{
+    font-size: 3rem;
+  }
+
+
+  footer{
+    padding-bottom: 5rem;
+  }
+
+  footer nav{
+    display: none;
+
+  }
