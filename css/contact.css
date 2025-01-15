@@ -49,3 +49,17 @@
 .submit {
     margin: 0 auto
 }
+
+@media (min-width: 768px) {
+    .defaultForm{
+        padding: 4rem;
+    }
+    .wpp-btn{
+        font-size: 1.2rem;
+        width: 20rem;
+        display: flex;
+        padding: 2.5rem;
+        gap: 1rem;
+        justify-content: center;
+    }
+}
