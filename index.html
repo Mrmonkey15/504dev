@@ -12,17 +12,17 @@
    <div class="defaultSidebar" id="sidebar">  
     <div class="sidebar__header">
     <i class="fa-solid fa-arrow-rotate-left" id="backButton"></i>
-    <img src="/images/LogoPrototype.svg" alt="" class="logo">
+    <img src="/images/Logo504dev.png" alt="" class="mainLogo">
      </div>
     <nav  aria-label="sidebar navigation">
         <div class="nav__item setItem">
-        <i class="fa-solid fa-house"></i><a href="">Início</a>
+        <i class="fa-solid fa-house"></i><a href="/index.html">Início</a>
         </div>
         <div class="nav__item">
-            <i class="fa-solid fa-message"></i><a href="">Contato</a>
+            <i class="fa-solid fa-message"></i><a href="/contact.html">Contato</a>
             </div>
             <div class="nav__item">
-                <i class="fa-solid fa-globe"></i></i><a href="">Sobre Nós</a>
+                <i class="fa-solid fa-globe"></i></i><a href="/about.html">Sobre Nós</a>
                 </div>
     </nav>
     <!-- social média -->
@@ -41,7 +41,7 @@
     <header>
         <div class="header__container">
         <i class="fa-solid fa-bars" id="menuToggled"></i>
-        <img src="/images/LogoPrototype.svg" alt="" class="logo">
+        <img src="/images/Logo504dev.png" alt="" id="mainLogo">
         </div>
     </header>
     <main>
@@ -88,7 +88,7 @@
             <h2>Quem somos ?</h2>
             <p> Somos a divisão de desenvolvimento web da agência 504. Somos especializados em criar sites personalizados, funcionais e estratégicos para empresas que buscam aumentar sua presença digital e alcançar novos clientes. 
             </p>
-            <strong>"O futuro pertence a quem se conecta com o mundo digital hoje." </strong>
+            <strong style="text-align: center;">"O futuro pertence a quem se conecta com o mundo." </strong>
        
             <div class="sign"> 
                 <span>Lucas Santos | CEO - 504 DEV</span>
@@ -107,24 +107,29 @@
                     <!-- elemento 1  -->
                 <div class="stepRow" id="stepRow1">
                     <i class="fa-solid fa-chevron-left" id="icon1"></i>
+                    <i class="fas fa-comments" style="font-size: 1.5rem; margin-right: 1rem;"></i>
                     <h3 id="title1" >Consulta Inicial </h3>
                     <p id="contentStep1">Entendemos as necessidades e objetivos do cliente, garantindo uma visão clara do projeto.</p>
                 </div>
                     <!-- elemento 2  -->
                 <div class="stepRow" id="stepRow2">
                     <h3 id="title2">Planejamento</h3>
+                    <i class="fas fa-chart-line" style="margin-left: 1rem;font-size: 1.5rem;" ></i>
                     <i class="fa-solid fa-chevron-right" id="icon2"></i>
                     <p id="contentStep2">Elaboramos o design e definimos a estrutura do site com base na <b>identidade da marca </b>e no <b>público-alvo</b>.</p>
                 </div>
                     <!-- elemento 3  -->
                 <div class="stepRow" id="stepRow3">
+          
                     <i class="fa-solid fa-chevron-left" id="icon3"></i>
+                    <i class="fas fa-palette" style="margin-right: 1rem; font-size: 1.5rem;"></i>
                     <h3 id="title3">Design</h3>
                     <p id="contentStep3">Criamos o layout visual e desenvolvemos o código, garantindo um site responsivo e funcional.</p>
                 </div>
                    <!-- elemento 4  -->
                 <div class="stepRow" id="stepRow4">
                     <h3 id="title4">Codificação</h3>
+                    <i class="fas fa-code" style="margin-left: 1rem; font-size: 1.5rem;" ></i>
                     <i class="fa-solid fa-chevron-right" id="icon4"></i>
                     <p id="contentStep4">Na codificação, implementamos as funcionalidades e trazemos o design à vida, garantindo uma experiência fluida em qualquer dispositivo.
                     </p>
@@ -132,6 +137,7 @@
                  <!-- elemento 5  -->
                 <div class="stepRow" id="stepRow5">
                     <i class="fa-solid fa-chevron-left" id="icon5"></i>
+                    <i class="fas fa-check-circle" style="margin-right: 1rem; font-size: 1.5rem;"></i>
                     <h3 id="title5">Finalização</h3>
                     <p id="contentStep5">Realizamos ajustes, testes de usabilidade e SEO, garantindo que o site esteja pronto para ser lançado com excelência.</p>
                 </div>
@@ -184,7 +190,9 @@
             <a href="/contact.html" class="nav__icon">Contato</a>
             <a href="/about.html" class="nav__icon">Sobre Nós</a>
         </nav>
-        <img src="/images/LogoPrototype.svg" alt="" class="logo">
+        <div id="LogoContainer">
+            <img src="/images/Logo504dev.png" alt="" class="logo">
+        </div>
         <span> &reg; Todos os Direitos Reservados</span>
     </footer> 
     <script src="/js/main.js"></script>

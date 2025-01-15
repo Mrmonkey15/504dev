@@ -33,7 +33,6 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    padding: var(--spacing-md);
     height: 100vh;
     background-color:var(--secondary-color);
     box-sizing: border-box;
@@ -50,9 +49,17 @@
 .sidebar__header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid white;
-    padding: 20px;
     font-size: var(--spacing-md);
+    height: 15vh;
+    padding: var(--spacing-xs) var(--spacing-sm);
+
+}
+#backButton{
+
+    margin-left: 1rem;
+    font-size: 2rem;
 }
 .sidebar__header img{
     margin: 0 auto;
@@ -165,7 +172,8 @@ font-family: azeret mono;
 header{
     display:flex;
     background-color: var(--secondary-color);
-    padding: var(--spacing-md);  
+    padding: var(--spacing-xs) var(--spacing-md);
+    max-height: 15vh;  
 }
 .header__container{
     display: flex;
@@ -175,6 +183,14 @@ header{
 }
 .header__container .logo {
     margin:0 auto;
+}
+.logo{
+    height: 100%;
+}
+#mainLogo{
+    margin: 0  auto;
+    
+
 }
 .header__container i {
    font-size: 32px;
@@ -187,8 +203,8 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: var(--spacing-md);
-    gap: var(--spacing-md);
+    padding: var(--spacing-xl);
+    justify-content: space-between;
     border-radius: 60px 60px 0 0;
 }
 footer nav{
@@ -206,4 +222,8 @@ nav a {
     color: #ffff;
     font-weight: bolder;
 
+}
+
+#LogoContainer{
+    height: 170px;
 }

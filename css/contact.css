@@ -46,3 +46,6 @@
     color: var(--secondary-color);
 }
 
+.submit {
+    margin: 0 auto
+}

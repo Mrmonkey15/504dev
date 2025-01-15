@@ -148,6 +148,7 @@ font-weight: 500;
 
 .processContainer{
     padding: var(--spacing-md);
+    padding-bottom: 3rem;
     display: flex;
     flex-direction: column;
     gap: var(--spacing-md);
