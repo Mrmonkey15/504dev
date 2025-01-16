@@ -25,6 +25,10 @@
     display: none;
 }
 
+.desktopNav{
+    display: none;
+}
+
 .defaultSidebar{
     position: fixed;
     top: 0;
@@ -226,4 +230,29 @@ nav a {
 
 #LogoContainer{
     height: 170px;
+}
+
+
+
+@media( min-width: 1024px){
+
+    #menuToggled{
+        display: none;
+    }
+
+   header{
+    padding: 4rem;
+    border-bottom: solid rgb(253, 253, 253) 1px;
+   }
+
+   .desktopNav{
+    display: block;
+
+   }
+
+   .desktopNav__items{
+    display: flex;
+    gap: 2rem
+   }
+
 }
