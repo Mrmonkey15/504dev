@@ -104,7 +104,7 @@
                 title5.style.display = "none";
                 setTimeout(() => {
                     closeLastStep(content5, title5, row5, icon5);
-                }, 4000);
+                }, 3000);
                 break;
             default:
                 break;
@@ -117,4 +117,43 @@
         row.style.width = '60%';
         icon.style.display = "inline";
     }
+
+
+// Seleciona todas as linhas (etapas)
+const steps = document.querySelectorAll('.stepRow');
+const animationClass = 'animate-arrow';
+
+// Variável para controlar o índice atual
+let currentStep = 0;
+
+// Função para atualizar as animações
+function updateAnimation() {
+    // Remove a animação do elemento atual
+    steps[currentStep].querySelector('.rowContent').classList.remove(animationClass);
+
+    // Atualiza o índice para o próximo elemento
+    currentStep++;
+
+    if (currentStep < steps.length) {
+        // Adiciona a animação ao próximo elemento
+        steps[currentStep].querySelector('.rowContent').classList.add(animationClass);
+    } else {
+        // Quando chegar ao final, aguarda 30 segundos antes de retornar ao primeiro
+        setTimeout(() => {
+            currentStep = 0; // Reseta o índice para o primeiro
+            steps[currentStep].querySelector('.rowContent').classList.add(animationClass);
+        }, 3000); // 30 segundos
+    }
+}
+
+// Adiciona eventos de clique a cada etapa
+steps.forEach((step, index) => {
+    step.addEventListener('click', () => {
+        if (index === currentStep) {
+            updateAnimation(); // Atualiza a animação somente no elemento atual
+        }
+    });
+});
+
+
 })();
