@@ -6,6 +6,11 @@
     box-sizing: border-box;
     font-weight: 500;
 }
+body{
+    max-width: 1500px;
+    margin: 0 auto;
+    
+}
 b{
     font-weight: bold;
 }
@@ -131,7 +136,7 @@ text-decoration: red;
 }
 
 .partners{
-    padding: 0 var(--spacing-md);
+    padding:  var(--spacing-md);
     gap: var(--spacing-lg);
 }
 .partners h1{
@@ -145,7 +150,7 @@ text-decoration: red;
    display: flex;
    flex-direction: column;
    gap: var(--spacing-md);
-   width: 100%;
+   width: 100%;;
 }
 .container-row{
     display: flex;
@@ -153,7 +158,7 @@ text-decoration: red;
 }
 
 .container-row i{
-    font-size: var(--spacing-md);
+    font-size: var(--spacing-xs);
 }
 .social-media{
     margin: 0 ;
@@ -162,6 +167,8 @@ text-decoration: red;
 .social-media h2{
     font-weight: bold;
     font-size: var(--spacing-md);
+    color: #FA8A01;
+
 }
 
 /* animação das setas em process */
