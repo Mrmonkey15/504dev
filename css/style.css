@@ -33,7 +33,7 @@ b{
     color: white;
 }
 .heroBanner img{
-    width: 30rem;
+    width: 20rem;
 }
 .heroBanner p{
 text-indent: var(--spacing-sm);
@@ -49,6 +49,10 @@ font-weight: 500;
     text-align: justify;
     text-indent: 1rem;
     align-items: center;
+    width:80vw ;
+}
+.services__item p{
+    text-align: justify;
 }
 .imgContainer img{
     max-width: 7rem;
@@ -57,7 +61,12 @@ font-weight: 500;
     font-size: var(--spacing-md);
     font-weight: bold;
     color: var(--secondary-color);
-    text-align: center;
+    text-align: justify;
+}
+#serviceDescription{
+max-width: 100%;
+text-decoration: red;
+
 }
 .about{
     align-items: start;
@@ -92,14 +101,17 @@ font-weight: 500;
 
 
 .CTA{
-    padding: var(--spacing-e) var(--spacing-md);
+    padding: var(--spacing-md) var(--spacing-md);
     gap: var(--spacing-lg);
 }
 .CTA h1{
     font-family: azeret mono;
     font-weight: bold;
     text-align: start ;
-    font-size: var(--spacing-lg);
+    font-size: 2.5rem;
+}
+.CTA p{
+    font-size: 1.2rem;
 }
 .CTA span{
     font-weight: bold;
@@ -114,14 +126,20 @@ font-weight: 500;
     gap: var(--spacing-md);
     border-radius: 2rem;
 }
+.subtitleContainer a{
+    font-size: 1rem;
+}
+
 .partners{
-    padding: 0 0 var(--spacing-md);
+    padding: 0 var(--spacing-md);
     gap: var(--spacing-lg);
 }
 .partners h1{
     color: var(--secondary-color);
     font-weight: bold;
+    text-align: center;
 }
+
 
 .brandContainer{
    display: flex;
@@ -145,6 +163,29 @@ font-weight: 500;
     font-weight: bold;
     font-size: var(--spacing-md);
 }
+
+/* animação das setas em process */
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animate-arrow {
+    animation: pulse 3s infinite ease-in-out;
+    cursor: pointer; /* Indica que é clicável */
+    color: #FA8A01;
+    transition: transform 0.3s ease;
+}
+
 
 .processContainer{
     padding: var(--spacing-md);
@@ -174,12 +215,18 @@ font-weight: 500;
 }
 .stepRow{
     display: flex;
+    justify-content: center;
     align-items: center;
     padding: var(--spacing-md);
     width: 60%;
     background-color: var(--tertiary-color);
     border-radius: 0 20px 20px 0;
     cursor:pointer
+}
+.rowContent{
+   display: flex;
+    justify-content: center; 
+    align-items: center;
 }
 .stepRow:hover{
     transform: translatey(-10px);
@@ -213,9 +260,15 @@ font-weight: 500;
     text-align: justify
 }
 
+
+
 @media (min-width: 768px) {
+    .heroBanner img{
+        width: 30rem;
+    }
+
     .process{
-        padding: 2rem  0  5rem ;
+        padding: 4rem  0   ;
     }
     .CTA{
         padding: 4rem;
@@ -224,6 +277,23 @@ font-weight: 500;
     .CTA h1 {
         font-size: 3rem;
     }
+ 
+ .heroBanner, .services, .about, .CTA, .partners, header{
+    padding: var(--spacing-e) 4rem;
+ }
+
+ .processContainer{
+    gap: 3rem;
+    padding: 3rem;
+ }
+
+ .processContainer h1{
+    font-size: 3rem;
+ }
+ .process{
+    padding-top: 0;
+ }
+
   }
 
   .subtitleContainer{
