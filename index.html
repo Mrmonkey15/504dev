@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>504 dev - Criando a sua marca digital</title>
+    <title>504 dev - Transformando ideias em realidade!</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="/css/layout.css">
     <link rel="stylesheet" href="/css/style.css">
@@ -12,7 +12,7 @@
    <div class="defaultSidebar" id="sidebar">  
     <div class="sidebar__header">
     <i class="fa-solid fa-arrow-rotate-left" id="backButton"></i>
-    <img src="images/Logo504dev.png" alt="" class="mainLogo">
+    <a href="" class="mainLogo"><img src="images/Logo504dev.png" alt="" class=""></a>
      </div>
     <nav  aria-label="sidebar navigation">
         <div class="nav__item setItem">
@@ -24,6 +24,7 @@
             <div class="nav__item">
                 <i class="fa-solid fa-globe"></i></i><a href="/about.html">Sobre Nós</a>
                 </div>
+                
     </nav>
     <!-- social média -->
     <aside class="social-media">
@@ -38,20 +39,30 @@
 
 
 <body>
+
+    <!-- cabeçalho  -->
     <header>
         <div class="header__container">
         <i class="fa-solid fa-bars" id="menuToggled"></i>
-        <img src="/images/Logo504dev.png" alt="" id="mainLogo">
+        <div id="logoHeaderContainer">
+            <a href="/index.html">
+                <img src="/images/Logo504dev.png" alt="" id="mainLogo">
+            </a>
+        </div>
         <nav class="desktopNav"> 
             <ul class="desktopNav__items">
                 <li>
-                    <a href="">Início</a>
+                    <a href="/index.html">Início</a>
                 </li>
                 <li>
-                    <a href="">Sobre Nós</a>
+                    <a href="/about.html">Sobre Nós</a>
                 </li>
+            
                 <li>
-                    <a href="">Contato</a>
+                    <div class="wppBtnContainer">
+                        <a href=""><i class="fab fa-whatsapp" id="IconWhatsapp"></i>
+                            WhatsApp </a>
+                    </div>
                 </li>
             </ul>
 
@@ -59,12 +70,14 @@
       
         </div>
     </header>
+
+
     <main>
         <!-- herobanner -->
         <section class="heroBanner">
             <h1>Dê o Próximo Passo: <span>Coloque Sua Empresa na Web!</span></h1>
             <div class="imgBox"><img src="images/IlustracaoBannerPrincipal.webp" alt=""></div>
-            <p> Transforme sua presença online com um site criado sob medida para suas necessidades.</p>
+            <p>Transforme sua presença online com um site criado sob medida para suas necessidades.</p>
             <a href=""class="alternative-btn">Faça um orçamento</a>
         </section>
 

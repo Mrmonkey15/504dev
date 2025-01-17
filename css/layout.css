@@ -177,12 +177,13 @@ header{
     display:flex;
     background-color: var(--secondary-color);
     padding: var(--spacing-xs) var(--spacing-md);
-    max-height: 15vh;  
+    height: 15vh;
+    border-bottom: solid rgb(253, 253, 253) 2px;
+
 }
 .header__container{
     display: flex;
     width: 100%;
-    justify-content: space-between;
     align-items: center;
 }
 .header__container .logo {
@@ -190,14 +191,20 @@ header{
 }
 .logo{
     height: 100%;
+
+}
+#logoHeaderContainer{
+    display: flex;
+    justify-content: center;
+    flex-grow: 2;
 }
 #mainLogo{
-    margin: 0  auto;
-    
-
+    margin: auto;
 }
 .header__container i {
    font-size: 32px;
+   flex-grow: 1;
+   max-width: fit-content;
 }
 
 /* Layout roda-pé mobile */
@@ -241,9 +248,21 @@ nav a {
     }
 
    header{
-    padding: 4rem;
-    border-bottom: solid rgb(253, 253, 253) 1px;
+    padding: 1rem 4rem;
+    height: 10vh;
    }
+
+   .header__container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;}
+    #mainLogo{
+        margin: 0;
+    }
+
+    #logoHeaderContainer{
+        justify-content: flex-start;
+    }
 
    .desktopNav{
     display: block;
@@ -252,7 +271,42 @@ nav a {
 
    .desktopNav__items{
     display: flex;
-    gap: 2rem
+    gap: 3rem;
+    list-style-type: none;
+    align-items: center;
+   }
+   .desktopNav__items a {
+    color: white;
+    font-weight: 400;
+   }
+   .desktopNav__items a:hover {
+    color: rgb(0, 0, 0);
    }
 
+   .wppBtnContainer{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00bb2d;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 20px;
+   }
+   .wppBtnContainer:hover{
+    transform: translateY(-10px);
+   }
+
+   .wppBtnContainer a {
+    color: white;
+
+   }
+   #IconWhatsapp{
+    color: white;
+    font-size: 1rem;
+   }
+}
+
+footer{
+    padding-bottom: 0;
 }

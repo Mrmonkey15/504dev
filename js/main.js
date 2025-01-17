@@ -17,7 +17,7 @@
     menuIcon.addEventListener('click', openSidebar);
     backBtn.addEventListener('click', closeSidebar);
 
-    // Processos functionalidade
+    // Processos funcionalidade
     
     const process = document.querySelector('.process');
     const content1 = document.getElementById('contentStep1');
@@ -40,7 +40,8 @@
     const title3 = document.getElementById('title3');
     const title4 = document.getElementById('title4');
     const title5 = document.getElementById('title5');
-    process.addEventListener('click', (e) => {
+
+    function handleStepEvent(e) {
         const target = e.target.closest('.stepRow'); 
         if (!target) return; 
         const stepId = target.id;
@@ -109,7 +110,7 @@
             default:
                 break;
         }
-    });
+    }
 
     function closeLastStep(content, title, row, icon) {
         content.style.display = 'none';
@@ -118,42 +119,43 @@
         icon.style.display = "inline";
     }
 
+    process.addEventListener('click', handleStepEvent); // Click event
+    process.addEventListener('mouseover', handleStepEvent); // Mouseover event
 
-// Seleciona todas as linhas (etapas)
-const steps = document.querySelectorAll('.stepRow');
-const animationClass = 'animate-arrow';
+    // Seleciona todas as linhas (etapas)
+    const steps = document.querySelectorAll('.stepRow');
+    const animationClass = 'animate-arrow';
 
-// Variável para controlar o índice atual
-let currentStep = 0;
+    // Variável para controlar o índice atual
+    let currentStep = 0;
 
-// Função para atualizar as animações
-function updateAnimation() {
-    // Remove a animação do elemento atual
-    steps[currentStep].querySelector('.rowContent').classList.remove(animationClass);
+    // Função para atualizar as animações
+    function updateAnimation() {
+        // Remove a animação do elemento atual
+        steps[currentStep].querySelector('.rowContent').classList.remove(animationClass);
 
-    // Atualiza o índice para o próximo elemento
-    currentStep++;
+        // Atualiza o índice para o próximo elemento
+        currentStep++;
 
-    if (currentStep < steps.length) {
-        // Adiciona a animação ao próximo elemento
-        steps[currentStep].querySelector('.rowContent').classList.add(animationClass);
-    } else {
-        // Quando chegar ao final, aguarda 30 segundos antes de retornar ao primeiro
-        setTimeout(() => {
-            currentStep = 0; // Reseta o índice para o primeiro
+        if (currentStep < steps.length) {
+            // Adiciona a animação ao próximo elemento
             steps[currentStep].querySelector('.rowContent').classList.add(animationClass);
-        }, 3000); // 30 segundos
-    }
-}
-
-// Adiciona eventos de clique a cada etapa
-steps.forEach((step, index) => {
-    step.addEventListener('click', () => {
-        if (index === currentStep) {
-            updateAnimation(); // Atualiza a animação somente no elemento atual
+        } else {
+            // Quando chegar ao final, aguarda 30 segundos antes de retornar ao primeiro
+            setTimeout(() => {
+                currentStep = 0; // Reseta o índice para o primeiro
+                steps[currentStep].querySelector('.rowContent').classList.add(animationClass);
+            }, 3000); // 30 segundos
         }
-    });
-});
+    }
 
+    // Adiciona eventos de clique a cada etapa
+    steps.forEach((step, index) => {
+        step.addEventListener('click', () => {
+            if (index === currentStep) {
+                updateAnimation(); // Atualiza a animação somente no elemento atual
+            }
+        });
+    });
 
 })();

@@ -7,9 +7,7 @@
     font-weight: 500;
 }
 body{
-    max-width: 1500px;
     margin: 0 auto;
-    
 }
 b{
     font-weight: bold;
@@ -179,7 +177,7 @@ text-decoration: red;
         transform: scale(1);
     }
     50% {
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
     100% {
         transform: scale(1);
@@ -210,7 +208,6 @@ text-decoration: red;
 }
 .processContainer p{
     text-align: justify;
-    font-size: 1.2rem;
 }
 .processContainer b {
     font-weight: bold;
@@ -285,7 +282,7 @@ text-decoration: red;
         font-size: 3rem;
     }
  
- .heroBanner, .services, .about, .CTA, .partners, header{
+ .heroBanner, .services, .about, .CTA, .partners{
     padding: var(--spacing-e) 4rem;
  }
 
@@ -324,7 +321,7 @@ text-decoration: red;
 
 
   footer{
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
   }
 
   footer nav{
@@ -333,3 +330,54 @@ text-decoration: red;
   }
 
 
+  @media (min-width: 1200px){
+    body{
+        max-width: 1300px;
+    }
+    * p{
+        font-size: 1.5rem;
+
+    }
+    
+    .heroBanner, .services{
+        padding: 4rem 7rem;
+        gap: 2.5rem 
+    }
+    .heroBanner h1, .heroBanner h1 span{
+        font-size: 3rem;
+    }
+    .heroBanner p{
+        font-size: 1.5rem;
+        
+    }
+
+    .heroBanner img{
+        width:  50vw;
+        margin: 0;
+    }
+    .alternative-btn{
+        font-size: 1.5rem;
+        padding: 1.5rem ;
+    }
+    .services{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .services h2{
+        text-align: center;
+        color: black;
+        row-gap: 5rem   ;
+    }
+
+    .CTA{
+        padding: 4rem 7rem;
+    }
+
+    .subtitleContainer{
+        background-color: white;
+
+        font-size: 2rem;
+
+    }
+  }
